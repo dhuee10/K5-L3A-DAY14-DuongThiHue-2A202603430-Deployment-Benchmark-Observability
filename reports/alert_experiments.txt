@@ -1,0 +1,36 @@
+### Thí nghiệm A
+t0 20:16:20
++   0.0s 20:16:20 LLMCostBurnRateHigh -> firing (activeAt 2026-11-25T13:07:17.413819623Z, value 2.2645898317526045e+00)
++  14.1s 20:16:34 AgentHighErrorRate -> pending (activeAt 2026-11-25T13:16:34.343788929Z, value 6.374501992031872e-02)
++  74.4s 20:17:35 AgentHighErrorRate -> firing (activeAt 2026-11-25T13:16:34.343788929Z, value 1.9226957383548068e-01)
+final: [('AgentHighErrorRate', 'firing', '2026-11-25T13:16:34.343788929Z', '1.9226957383548068e-01'), ('LLMCostBurnRateHigh', 'firing', '2026-11-25T13:07:17.413819623Z', '2.153858644068545e+00')]
+
+### Thí nghiệm B
+t0 20:20:58
++   0.0s 20:20:58 AgentInstanceDown -> pending (activeAt 2026-11-25T13:20:49.343788929Z, value 0e+00)
++   6.0s 20:21:04 AgentHighLatencyP95 -> pending (activeAt 2026-11-25T13:21:04.343788929Z, value 1.5457168700268606e+00)
++ 126.8s 20:23:05 AgentHighLatencyP95 -> firing (activeAt 2026-11-25T13:21:04.343788929Z, value 1.9133264462809916e+00)
+final: [('AgentHighLatencyP95', 'firing', '2026-11-25T13:21:04.343788929Z', '1.9133264462809916e+00')]
+
+### Thí nghiệm C
+t0 20:23:31
++   0.0s 20:23:31 AgentHighLatencyP95 -> firing (activeAt 2026-11-25T13:21:04.343788929Z, value 1.9107084362731144e+00)
++   8.1s 20:23:39 LLMCostBurnRateHigh -> pending (activeAt 2026-11-25T13:23:37.413819623Z, value 3.023614312081519e+00)
++ 126.6s 20:25:37 LLMCostBurnRateHigh -> firing (activeAt 2026-11-25T13:23:37.413819623Z, value 1.5958292061520009e+01)
+final: [('LLMCostBurnRateHigh', 'firing', '2026-11-25T13:23:37.413819623Z', '1.5958292061520009e+01')]
+
+### Thí nghiệm D
+t0 20:19:29
++  12.1s 20:19:41 AgentInstanceDown -> pending (activeAt 2026-11-25T13:19:39.343788929Z, value 0e+00)
++  40.3s 20:20:09 AgentInstanceDown -> firing (activeAt 2026-11-25T13:19:39.343788929Z, value 0e+00)
+final: [('AgentInstanceDown', 'firing', '2026-11-25T13:19:39.343788929Z', '0e+00')]
+
+### Thí nghiệm E
+t0 20:26:03
++   0.0s 20:26:03 LLMCostBurnRateHigh -> firing (activeAt 2026-11-25T13:23:37.413819623Z, value 1.6998024790960642e+01)
+final: [('LLMCostBurnRateHigh', 'firing', '2026-11-25T13:23:37.413819623Z', '5.952033953190141e+00')]
+
+### promtool test rules
+Processing test file: alert_rules_test.yml
+  SUCCESS
+
